@@ -1,0 +1,13 @@
+1. The program begins by welcoming the user and asking for the total number of café customers to be served.
+
+
+2. It stores the café’s menu items and their prices using arrays for easy access during order processing.
+
+
+3. Each customer can order multiple items by entering the item number and quantity, and the program calculates their total bill.
+
+
+4. As orders are taken, the program keeps track of the total sales amount and the quantity of each item sold.
+
+
+5. After serving all customers, it displays a summary showing the total revenue, total items sold, and the most frequently ordered item.
