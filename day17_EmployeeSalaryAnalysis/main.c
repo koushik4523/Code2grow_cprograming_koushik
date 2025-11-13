@@ -15,11 +15,11 @@ int main() {
 
     
     printf("\nLet’s collect your details first:\n");
-    printf("→ Your Name: ");
+    printf("Your Name: ");
     scanf(" %[^\n]", studentName);
-    printf("→ Roll Number: ");
+    printf("Roll Number: ");
     scanf(" %[^\n]", rollNum);
-    printf("→ Section: ");
+    printf(" Section: ");
     scanf(" %[^\n]", classSection);
 
     
@@ -32,7 +32,7 @@ int main() {
 
     printf("\nEnter the monthly salary for each staff member:\n");
     for (i = 0; i < employeeCount; i++) {
-        printf(" Staff Member %d Salary: ₹", i + 1);
+        printf(" Staff Member %d Salary: Rs.", i + 1);
         scanf("%f", &payList[i]);
     }
 
@@ -48,7 +48,7 @@ int main() {
         printf("5 - Arrange Salaries (Lowest to Highest)\n");
         printf("6 - Quit\n");
         printf("=                                    = \n");
-        printf("Pick an option (1–6): ");
+        printf("Pick an option (1-6): ");
         scanf("%d", &userOption);
 
         
@@ -62,11 +62,11 @@ int main() {
             case 1:
                 printf("\nAll Salaries of Staff:\n");
                 for (i = 0; i < employeeCount; i++)
-                    printf(" Staff %d: ₹%.2f\n", i + 1, payList[i]);
+                    printf(" Staff %d: Rs.%.2f\n", i + 1, payList[i]);
                 break;
             case 2:
-                printf("\nTotal Salary Paid: ₹%.2f\n", sum);
-                printf("Average Salary: ₹%.2f\n", mean);
+                printf("\nTotal Salary Paid: Rs.%.2f\n", sum);
+                printf("Average Salary: Rs.%.2f\n", mean);
                 break;
             case 3:
                 maxSalary = minSalary = payList[0];
@@ -76,8 +76,8 @@ int main() {
                     if (payList[i] < minSalary)
                         minSalary = payList[i];
                 }
-                printf("\nHighest Salary: ₹%.2f\n", maxSalary);
-                printf("Lowest Salary: ₹%.2f\n", minSalary);
+                printf("\nHighest Salary: Rs.%.2f\n", maxSalary);
+                printf("Lowest Salary: Rs.%.2f\n", minSalary);
                 break;
             case 4:
                 aboveavg = belowavg = 0;
@@ -110,7 +110,7 @@ int main() {
                 printf("\nGoodbye! Thanks for using the Salary Tracker.\n");
                 break;
             default:
-                printf("\nInvalid input. Please choose from 1–6.\n");
+                printf("\nInvalid input. Please choose from 1-6.\n");
         }
 
         if (userOption != 6) {
@@ -122,7 +122,7 @@ int main() {
 
     printf("\nSystem closed.\n");
     printf("Submitted by: %s | Roll: %s | Section: %s\n", studentName, rollNum, classSection);
-    printf("Challenge Day 17 – Code2Grow Program\n");
+    printf("Challenge Day 17 - Code2Grow Program\n");
 
     return 0;
 }
